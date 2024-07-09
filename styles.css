@@ -11,14 +11,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .content {
     text-align: center;
+    max-width: 100%;
 }
 
 .spin {
     animation: spin 4s linear infinite;
+    width: 100%;
+    max-width: 300px; /* Limit the max width for larger screens */
 }
 
 .coming-soon {
@@ -29,8 +33,14 @@ body, html {
     margin-top: 20px;
     text-align: center;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .coming-soon {
+        font-size: 30pt;
+    }
 }
