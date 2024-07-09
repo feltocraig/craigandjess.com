@@ -13,8 +13,21 @@ body, html {
     align-items: center;
 }
 
+.content {
+    text-align: center;
+}
+
 .spin {
     animation: spin 4s linear infinite;
+}
+
+.coming-soon {
+    line-height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50pt;
+    margin-top: 20px;
+    text-align: center;
 }
 
 @keyframes spin {
